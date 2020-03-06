@@ -6,4 +6,4 @@
 
 # Herokuapp
 
-###### https://journalsandy.herokuapp.com/about/
+###### https://journalsandy.herokuapp.com
