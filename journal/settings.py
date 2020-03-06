@@ -25,7 +25,8 @@ SECRET_KEY = 'k05$r(7#$f&gwm8=x93463=n%0_8383ck9p@4wqd*$7dbh6a8p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'journalsandy.herokuapp.com']
+
 
 
 # Application definition
