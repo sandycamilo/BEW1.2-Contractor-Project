@@ -1,4 +1,4 @@
 .git/
 .env
-py3env/
+py3env
 *.md
