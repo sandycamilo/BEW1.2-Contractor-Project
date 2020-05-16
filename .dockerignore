@@ -2,3 +2,4 @@
 .env
 py3env
 *.md
+.gitignore
