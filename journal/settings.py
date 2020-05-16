@@ -28,8 +28,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'journalsandy.herokuapp.com', '0.0.0.0']
-
+ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1', 'journalsandy.herokuapp.com']
 
 # Application definition
 
@@ -43,6 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    "http://0.0.0.0:8080/"
 ]
 
 MIDDLEWARE = [
