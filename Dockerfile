@@ -20,7 +20,7 @@ RUN pip install -r requirements.txt
 EXPOSE 8080 80 443
 
 # # Run a startup script in the specified directory.
-# HEALTHCHECK CMD curl --fail http://0.0.0.0:8000/ || exit 1
+# HEALTHCHECK CMD curl --fail http://0.0.0.0:8080/ || exit 1
 
 # # running the server
  ENTRYPOINT ["python3"]
