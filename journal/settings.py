@@ -63,7 +63,9 @@ ROOT_URLCONF = 'journal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # os.path.join(BASE_DIR, 'templates').replace('\\', '/'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,18 +85,18 @@ WSGI_APPLICATION = 'journal.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
-     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':  os.getenv("DB_NAME"),
-        'USER':  os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': os.getenv("DB_HOST", 'db'),
-        'PORT': os.getenv("DB_PORT", 5432),
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    #  'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME':  os.getenv("PROJECT_DB_NAME"),
+    #     'USER':  os.getenv("PROJECT_DB_USER"),
+    #     'PASSWORD': os.getenv("PROJECT_DB_PASSWORD"),
+    #     'HOST': os.getenv("PROJECT_DB_HOST", 'db'),
+    #     'PORT': os.getenv("PROJECT_DB_PORT", 5432),
+    # }
 }
 
 

@@ -4,7 +4,7 @@ FROM python:3.7
 # # to the terminal with out buffering it first
 ENV PYTHONUNBUFFERED 1
 
-RUN apk update && apk upgrade && apk add --no-cache make g++ bash git openssh postgresql-dev curl
+# RUN apk update && apk upgrade && apk add --no-cache make g++ bash git openssh postgresql-dev curl
 
 # # create root directory for our project in the container
 RUN mkdir /journal
