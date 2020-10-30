@@ -2,17 +2,17 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ( ListView, DetailView, CreateView, UpdateView, DeleteView )
 from .models import Post
 
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
+# def home(request):
+#     context = {
+#         'posts': Post.objects.all()
+#     }
+#     return render(request, 'blog/home.html', context)
 
-def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
+# def about(request):
+#     return render(request, 'blog/about.html', {'title': 'About'})
 
 class PostlistView(ListView):
     model = Post
@@ -65,4 +65,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
+
+def about(request):
+    return render(request, 'blog/about.html', {'title': 'About'})
 
