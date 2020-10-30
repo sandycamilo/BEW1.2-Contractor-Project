@@ -1,0 +1,50 @@
+.col-md-8 {
+  padding: 20px;
+  margin: 40px;
+  position: relative;
+  left: -200px;
+  top: 100px;
+}
+
+.navbarbrand {
+  font-size: 60px;
+  color: #ffffff;
+  position: relative;
+  left: 60px;
+}
+
+.nav-link {
+  font-size: 22px;
+  color: white;
+  position: relative;
+  left: 200px;
+  top: 2px;
+
+}
+
+.media-body {
+  position: relative;
+  top: 80px;
+  left: 60px;
+  font-size: 18px;
+  color: black;
+}
+
+.mr-2 {
+  font-size: 25px;
+  color: black;
+}
+
+.text-muted {
+  color: blue;
+}
+
+.rounded-circle {
+  margin: 20px;
+  padding: 0;
+}
+
+.article-img {
+  width: 200px;
+  height: 200px;
+}
