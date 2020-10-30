@@ -14,11 +14,19 @@
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 22px;
+  color: white;
+  position: relative;
+  top: -1px;
+}
+
+.nav-link {
+  font-size: 22px;
   color: white;
   position: relative;
   left: 200px;
-  top: 10px;
+  top: 2px;
+
 }
 
 .media-body {
