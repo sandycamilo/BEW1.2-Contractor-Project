@@ -3,6 +3,11 @@
 
 ###### A place to share your ideas and get feedback. 
 
+ 
+ # Demo:
+![](http://g.recordit.co/4kTJDtw6JW.gif )
+
+
 
 https://journalsandy.herokuapp.com
 
